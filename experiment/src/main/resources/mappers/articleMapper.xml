@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.even.experiment.mappers.ArticleMapper">
+
+    <select id="selectByIdOne" resultType="com.even.experiment.model.domain.Article">
+        select id,title,author,content,file_name,state
+        from article
+        where id = #{id}
+    </select>
+    <insert id="addArticle" >
+        insert into Article (id, title, author, content, file_name, state) VALUES (#{id},#{title},#{author},#{content},#{fileName},#{state})
+    </insert>
+</mapper>
