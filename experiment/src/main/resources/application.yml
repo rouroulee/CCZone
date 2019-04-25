@@ -1,10 +1,18 @@
 server:
   port: 1115
+
 spring:
   datasource:
     username: root
     password: bb1413..
     url: jdbc:mysql://127.0.0.1:3306/cc?characterEncoding=utf8&useSSL=false&useUnicode=true&zeroDateTimeBehavior=convertToNull
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/Article
 mybatis:
   type-aliases-package: com.even.experiment.model
   mapper-locations: classpath:**/mappers/*.xml
+
+application:
+  title: 猪圈No1
+  version: v0.0.1
