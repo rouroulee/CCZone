@@ -56,4 +56,6 @@ public class ArticleService {
     public List<Article> findAllArticleFromMongo(String author){
         return articleRepository.findAll();
     }
+
+
 }

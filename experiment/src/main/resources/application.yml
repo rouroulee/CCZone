@@ -16,3 +16,18 @@ mybatis:
 application:
   title: 猪圈No1
   version: v0.0.1
+
+dubbo:
+  application:
+    name: yanwei
+  protocol:
+    name: dubbo
+    port: 20880
+  provider:
+    timeout: 6000
+    version: 1.0.0
+  consumer:
+    check: false
+  registry:
+    address: zookeeper://127.0.0.1:2181?backup=127.0.0.1:2182,127.0.0.1:2183
+    group: dev

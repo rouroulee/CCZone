@@ -1,0 +1,20 @@
+server:
+  port: 4180
+
+dubbo:
+  application:
+    name: liyanwei
+  protocol:
+    name: dubbo
+    port: 20880
+  provider:
+    timeout: 6000
+    version: 1.0.0
+  consumer:
+    check: false
+spring:
+  application:
+    name: dubbo-demo
+  profiles:
+    active:
+      - dev
